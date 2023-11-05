@@ -23,5 +23,6 @@ int summit(StackNode*);
 StackNode* createStack(int);
 void displayStack(StackNode*);
 int getSize(char*);
+bool compareTwoStack(StackNode *, StackNode *);
 
 #endif /* STACK_H */

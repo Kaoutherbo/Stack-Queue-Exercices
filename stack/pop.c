@@ -6,11 +6,11 @@
  * Return: pointer to the new head pointer after deleting the first (top) element
  * */ 
 
-StackNode* pop(StackNode** head) {
-    if (*head != NULL) {
-        StackNode* oldHead = *head;
-        *head = (*head)->next;
+StackNode* pop(StackNode* head) {
+    if (head != NULL) {
+        StackNode* oldHead = head;
+        head = head->next;
         free(oldHead);
     }
-    return *head;
+    return head;
 }
