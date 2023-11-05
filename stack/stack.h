@@ -23,7 +23,7 @@ int summit(StackNode*);
 StackNode* createStack(int);
 void displayStack(StackNode*);
 int getSize(char*);
-bool compareTwoStack(StackNode *, StackNode *);
+bool compareTwoStacks(StackNode *, StackNode *);
 StackNode* freeStack(StackNode**) ;
 
 #endif /* STACK_H */
