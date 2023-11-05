@@ -1,6 +1,12 @@
 #include "stack.h"
 
-// Function to display the elements of the stack
+/**
+ * displayStack - Function to display the elements of the stack
+ * 
+ * @head: pointer to the first element in the stack
+ * Retrun: void
+*/
+
 void displayStack(StackNode* head) {
     if (head == NULL) {
         printf("Stack is empty\n");
