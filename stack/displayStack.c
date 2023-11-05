@@ -1,6 +1,6 @@
 #include "stack.h"
 
-void displayStack(Stack *head)
+void displayStack(StackNode *head)
 {
     if(!head)
     {
@@ -8,7 +8,7 @@ void displayStack(Stack *head)
         return;
     }
     else{
-        Stack* temp = head;
+        StackNode* temp = head;
         printf("The elsements of this stack are : \n");
         while (temp != NULL){
             printf("%d -> ", temp->data);

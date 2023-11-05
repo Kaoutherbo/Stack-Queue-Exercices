@@ -7,21 +7,21 @@
 #include <stdbool.h>
 
 // Define the struct
-typedef struct stack Stack;
+typedef struct StackNode StackNode;
 
-struct stack
+struct StackNode
 {
     int data;
-    Stack *next;
+    stackNode *next;
 };
 
 // Prototypes of functions
-Stack* pop(Stack*);
-Stack* push( Stack*, int);
-bool isEmpty(Stack*);
-int summit(Stack*);
-Stack* creatStack(int);
-void displayStack(Stack*);
+StackNode* pop(StackNode*);
+StackNode* push( StackNode*, int);
+bool isEmpty(StackNode*);
+int summit(StackNode*);
+StackNode* creatStack(int);
+void displayStack(StackNode*);
 int getSize(char*);
 
 #endif /* STACK_H */

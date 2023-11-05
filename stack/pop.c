@@ -2,10 +2,10 @@
 
 // Delete in the beginning  
 
-Stack* pop(Stack *head){
+StackNode* pop(StackNode *head){
     if(head != NULL)
     {
-        Stack* oldHead = head;
+        StackNode* oldHead = head;
         head = head->next;
         free(oldHead);
     }

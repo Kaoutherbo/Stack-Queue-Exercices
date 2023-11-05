@@ -2,9 +2,9 @@
 
 // add in the beginning  
 
-Stack* push( Stack *head, int data)
+StackNode* push( StackNode *head, int data)
 {
-    Stack *newNode = (Stack *)malloc(sizeof(Stack));
+    StackNode *newNode = (StackNode *)malloc(sizeof(StackNode));
     newNode->data = data;
     newNode->next = NULL;
 
@@ -13,7 +13,7 @@ Stack* push( Stack *head, int data)
         head = newNode;
     }
     else{
-        Stack *temp = head;
+        StackNode *temp = head;
         newNode->next = temp;
         head = newNode;
     }
