@@ -18,13 +18,13 @@ void displayStack(StackNode* head) {
     printf("Stack elements: ");
     
     // Create a copy of the stack in 'temp'
-    while (head != NULL) {
+    while (!isEmpty(head)) {
         temp = push(temp, summit(head));
         head = pop(head);
     }
     
     // Display the elements from 'temp'
-    while (temp != NULL) {
+    while (!isEmpty(temp)) {
         printf("%d ", summit(temp));
         temp = pop(temp);
     }
@@ -32,9 +32,5 @@ void displayStack(StackNode* head) {
     printf("\n");
     
     // Free the 'temp' stack
-    while (temp != NULL) {
-        StackNode* next = temp->next;
-        free(temp);
-        temp = next;
-    }
+    temp = freeStack(&temp);
 }

@@ -24,5 +24,6 @@ StackNode* createStack(int);
 void displayStack(StackNode*);
 int getSize(char*);
 bool compareTwoStack(StackNode *, StackNode *);
+StackNode* freeStack(StackNode**) ;
 
 #endif /* STACK_H */
