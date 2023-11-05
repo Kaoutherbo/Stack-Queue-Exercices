@@ -2,10 +2,9 @@
 
 int main()
 {
-    StackNode *list = NULL;
     int size = getSize("How many elements you want in the stack ? : ");
-    list = creatStack(size);
-    displayStack(list);
-
+    StackNode* stack = createStack(size);
+    displayStack(stack);
+    
     return 0;
 }

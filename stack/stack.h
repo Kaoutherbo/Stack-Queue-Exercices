@@ -20,7 +20,7 @@ StackNode* pop(StackNode*);
 StackNode* push( StackNode*, int);
 bool isEmpty(StackNode*);
 int summit(StackNode*);
-StackNode* creatStack(int);
+StackNode* createStack(int);
 void displayStack(StackNode*);
 int getSize(char*);
 

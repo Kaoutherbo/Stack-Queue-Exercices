@@ -1,18 +1,15 @@
 #include "stack.h"
 
-void displayStack(StackNode *head)
-{
-    if(!head)
-    {
-        printf("The stuck is empty!");
+// Function to display the elements of the stack
+void displayStack(StackNode* head) {
+    if (head == NULL) {
+        printf("Stack is empty\n");
         return;
     }
-    else{
-        StackNode* temp = head;
-        printf("The elsements of this stack are : \n");
-        while (temp != NULL){
-            printf("%d -> ", temp->data);
-            temp = temp->next;
-        }
+    printf("Stack elements: ");
+    while (head != NULL) {
+        printf("%d ", head->data);
+        head = head->next;
     }
+    printf("\n");
 }

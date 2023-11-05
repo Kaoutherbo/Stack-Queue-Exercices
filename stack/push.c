@@ -1,21 +1,13 @@
 #include "stack.h"
 
-// add in the beginning  
-
-StackNode* push( StackNode *head, int data)
-{
-    StackNode *newNode = (StackNode *)malloc(sizeof(StackNode));
+// Function to push an element onto the stack
+StackNode* push(StackNode* head, int data) {
+    StackNode* newNode = (StackNode*)malloc(sizeof(StackNode));
+    if (!newNode) {
+        printf("Memory allocation error\n");
+        return NULL;
+    }
     newNode->data = data;
-    newNode->next = NULL;
-
-    if(head == NULL)
-    {
-        head = newNode;
-    }
-    else{
-        StackNode *temp = head;
-        newNode->next = temp;
-        head = newNode;
-    }
-    return head;
+    newNode->next = head;
+    return newNode;
 }
