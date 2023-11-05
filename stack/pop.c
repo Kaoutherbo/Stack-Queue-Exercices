@@ -1,9 +1,9 @@
 #include "stack.h"
 /**
- * pop - function that delete the first element in stack (summit)
+ * pop - function that delete the first element in stack (top element)
  * 
  * @**head: pointer to the head pointer in the stack 
- * Return: pointer to the new head pointer after deleting the first element
+ * Return: pointer to the new head pointer after deleting the first (top) element
  * */ 
 
 StackNode* pop(StackNode** head) {
