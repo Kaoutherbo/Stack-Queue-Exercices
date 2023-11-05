@@ -9,7 +9,7 @@ StackNode *creatStack(int size)
         printf("Memory can't be alocated !");
         return NULL;
     }
-    head->next = NULL;
+    head = NULL;
     for (size_t i = 0; i < size; i++)
     {
         int data;

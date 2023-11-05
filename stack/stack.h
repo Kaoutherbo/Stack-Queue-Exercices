@@ -12,7 +12,7 @@ typedef struct StackNode StackNode;
 struct StackNode
 {
     int data;
-    stackNode *next;
+    StackNode *next;
 };
 
 // Prototypes of functions
