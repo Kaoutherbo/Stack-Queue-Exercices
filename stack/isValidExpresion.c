@@ -4,19 +4,31 @@
 bool isValidExpresion(char *expre, int len) {
     StackNode* stack = NULL; // Initialize an empty stack
 
-    for (int i = 0; i < len; i++) {
-        if (expre[i] == '(' || expre[i] == '[') {
+    for (int i = 0; i < len; i++) 
+    {
+        if (expre[i] == '(' || expre[i] == '[') 
+        {
             stack = push(stack, expre[i]);
-        } else if (expre[i] == ')') {
-            if (isEmpty(stack) || stack->data != '(') {
+        } 
+        else if (expre[i] == ')') 
+        {
+            if (isEmpty(stack) || stack->data != '(') 
+            {
                 return false;
-            } else {
+            } 
+            else 
+            {
                 stack = pop(stack);
             }
-        } else if (expre[i] == ']') {
-            if (isEmpty(stack) || stack->data != '[') {
+        }
+         else if (expre[i] == ']') 
+        {
+            if (isEmpty(stack) || stack->data != '[')
+            {
                 return false;
-            } else {
+            } 
+            else 
+            {
                 stack = pop(stack);
             }
         }
