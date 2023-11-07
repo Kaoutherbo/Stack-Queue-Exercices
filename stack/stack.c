@@ -8,7 +8,7 @@
 int main()
 {
     char *expression = getExpression("Enter an expression : ");
-    
+
     /* int size1 = getSize("How many elements you want in the stack 1 ? : ");
     int size2 = getSize("How many elements you want in the stack 2 ? : ");
 
@@ -23,7 +23,7 @@ int main()
     else
         printf("They aren't equal ");*/
 
-    if(getExpression(expression))
+    if(isValidExpresion(expression, strlen(expression)))
         printf("The expression is valid ");
     else
         printf("The expression isn't valid ");
