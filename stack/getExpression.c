@@ -7,9 +7,9 @@
 */
 char* getExpression(char* mes)
 {
-    char *expression ;
+    char *expression = malloc(sizeof(char) * 1000);
     printf("%s", mes);
-    scanf("%s", &expres);
+    scanf("%s", &expression);
     
-    return expres;
+    return expression;
 }
