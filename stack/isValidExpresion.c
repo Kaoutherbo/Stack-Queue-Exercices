@@ -1,6 +1,13 @@
 #include "stack.h"
+/**
+ * isValidExpresion - Function to check if the expression is valid or not
+ * 
+ * @expre: the exppresion entered by user 
+ * @len: the lenght of the expression
+ * 
+ * Return: true or false
+*/
 
-// Function to check if the expression is valid
 bool isValidExpresion(char *expre, int len) {
     StackNode* stack = NULL; // Initialize an empty stack
 
