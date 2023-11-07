@@ -25,8 +25,7 @@ void displayStack(StackNode*);
 int getSize(char*);
 bool compareTwoStacks(StackNode *, StackNode *);
 StackNode* freeStack(StackNode**) ;
-
-
+char* getExpression(char*);
 bool isValidExpresion(char*, int);
 
 #endif /* STACK_H */
