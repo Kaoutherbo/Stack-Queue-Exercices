@@ -1,6 +1,14 @@
 #include "stack.h"
 
-// Function to split elements into even and odd stacks
+/**
+ * oddEvenStacks - Function to split elements into even and odd stacks
+ * 
+ * @stack: pointer to StackNode
+ * @evenStack: pointer to the pointer that point for StackNode ,this is for evenStack
+ * @oddStack: pointer to the pointer that point for StackNode ,this is for oddStack
+ * 
+ * Return: void
+ */ 
 void oddEvenStacks(StackNode *stack, StackNode **evenStack, StackNode **oddStack) {
     *evenStack = NULL;
     *oddStack = NULL;
