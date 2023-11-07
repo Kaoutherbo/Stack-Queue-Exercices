@@ -28,6 +28,6 @@ bool compareTwoStacks(StackNode *, StackNode *);
 StackNode* freeStack(StackNode**) ;
 char* getExpression(char*);
 bool isValidExpresion(char*, int);
-void oddEvenStacks(StackNode *, StackNode *);
+void oddEvenStacks(StackNode *, StackNode **, StackNode **);
 
 #endif /* STACK_H */
