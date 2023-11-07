@@ -29,4 +29,6 @@ StackNode* freeStack(StackNode**) ;
 char* getExpression(char*);
 bool isValidExpresion(char*, int);
 
+void oddEvenStacks(StackNode *, StackNode *);
+
 #endif /* STACK_H */
