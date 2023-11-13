@@ -11,6 +11,16 @@ bool isOperator(char ch) {
     return (ch == '+' || ch == '-' || ch == '*' || ch == '/');
 }
 
+/**
+ * postFixExpression - function that takes a post fix exression
+ * and performs the corresponding operations.
+ * @arr: the post fix expression it containes commas between
+ * each element
+ * 
+ * Return: the result after performing coressponding operations
+ * 
+*/
+
 int postFixExpression(char* arr) {
     StackNode* stack = NULL;
     int len = strlen(arr);
