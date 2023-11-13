@@ -1,7 +1,13 @@
 #include "stack.h"
 
 
-int isOperator(char ch) {
+/**
+ * isOperator - function that checks if the character is an operation or not
+ * 
+ * @ch: a character to be checked
+ * Return: true or false
+*/
+bool isOperator(char ch) {
     return (ch == '+' || ch == '-' || ch == '*' || ch == '/');
 }
 

@@ -30,6 +30,6 @@ char* getExpression(char*);
 bool isValidExpresion(char*, int);
 void oddEvenStacks(StackNode *, StackNode **, StackNode **);
 int postFixExpression(char *arr);
-int isOperator(char ch);
+bool isOperator(char ch);
 
 #endif /* STACK_H */
