@@ -8,7 +8,7 @@ int isOperator(char ch) {
 int postFixExpression(char* arr) {
     StackNode* stack = NULL;
     int len = strlen(arr);
-    char* token = strtok(arr, ",");
+    char* token = strtok(arr, ","); // strtok tokenize the input string based on commas
     
     while (token != NULL) {
         if (isOperator(token[0])) {
@@ -55,7 +55,7 @@ int postFixExpression(char* arr) {
             exit(EXIT_FAILURE);
         }
 
-        token = strtok(NULL, ",");
+        token = strtok(NULL, ","); 
     }
 
     if (!isEmpty(stack)) {
