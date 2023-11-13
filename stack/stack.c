@@ -1,6 +1,11 @@
 #include "stack.h"
 
 
+/**
+ * main - check the code
+ * 
+ * Return: Always 0
+*/
 
 int main() {
     char expression[100];
@@ -16,17 +21,7 @@ int main() {
     int result = postFixExpression(expression);
     printf("Result: %d\n", result);
 
-    return 0;
-}
 
-
-/**
- * main - check the code
- * 
- * Return: Always 0
-*//*
-int main()
-{
     // char *expression = getExpression("Enter an expression : ");
 
    // int size1 = getSize("How many elements you want in the stack 1 ? : ");
@@ -60,10 +55,6 @@ int main()
     /* Display the odd elements
     printf("The odd elements are: ");
     displayStack(oddStack);*/
-    /*char postfix[] = "23*5+";
-    int result = postFixExpression(postfix, sizeof(postfix) - 1);
-    printf("Result: %d\n", result);
     
     return (0);
 }
-*/
