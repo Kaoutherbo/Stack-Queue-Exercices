@@ -7,6 +7,13 @@
  * Return: Always 0
 */
 
+ /**
+  * fgets - this function is for reading user input because it provides a safe
+  * way to read input lines and avoids common pitfalls associated with other input
+  * functions like scanf. It helps prevent buffer overflows and handles input lines
+  * more reliably.
+  */
+
 int main() {
     char expression[100];
     printf("Enter the postfix expression (e.g., 2,3,+,4,5,-,*): ");
