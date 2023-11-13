@@ -1,10 +1,30 @@
 #include "stack.h"
 
+
+
+int main() {
+    char expression[100];
+    printf("Enter the postfix expression (e.g., 2,3,+,4,5,-,*): ");
+    fgets(expression, sizeof(expression), stdin);
+
+    // Remove the newline character from the input
+    size_t len = strlen(expression);
+    if (len > 0 && expression[len - 1] == '\n') {
+        expression[len - 1] = '\0';
+    }
+
+    int result = postFixExpression(expression);
+    printf("Result: %d\n", result);
+
+    return 0;
+}
+
+
 /**
  * main - check the code
  * 
  * Return: Always 0
-*/
+*//*
 int main()
 {
     // char *expression = getExpression("Enter an expression : ");
@@ -40,9 +60,10 @@ int main()
     /* Display the odd elements
     printf("The odd elements are: ");
     displayStack(oddStack);*/
-    char postfix[] = "23*5+";
+    /*char postfix[] = "23*5+";
     int result = postFixExpression(postfix, sizeof(postfix) - 1);
     printf("Result: %d\n", result);
     
     return (0);
 }
+*/
