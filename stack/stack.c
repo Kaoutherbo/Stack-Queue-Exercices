@@ -25,8 +25,7 @@ int main() {
         expression[len - 1] = '\0';
     }
 
-    int result = postFixExpression(expression);
-    printf("Result: %d\n", result);
+    printf("Result: %d\n", postFixExpression(expression););
 
 
     // char *expression = getExpression("Enter an expression : ");

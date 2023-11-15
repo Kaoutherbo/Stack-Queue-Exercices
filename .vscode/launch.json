@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/LENOVO/Documents/Problem solving/Stuck-Queue-Exercices/stack",
-      "program": "c:/Users/LENOVO/Documents/Problem solving/Stuck-Queue-Exercices/stack/build/Debug/outDebug",
+      "cwd": ".",
+      "program": "build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
